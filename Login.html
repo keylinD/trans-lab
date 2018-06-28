@@ -26,13 +26,13 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" onchange="validarEmail()">
+              <input type="email" name="userEmail" class="form-control" id="exampleInputEmail1" placeholder="Email" >
             </div>
-            <div class="form-group">
+            <div class="form-group" name:"login">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" pattern="[0-9]{0,8}" required onchange="validarPassword()">
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" pattern="[0-9]{0,8}" required >
             </div>
-            <button type="submit" class="btn btn-primary" onchange="inicio()">Login</button>
+            <button type="submit" class="btn btn-primary" onclick="inicio()">Login</button>
             <hr />
             <button type="button" class="btn btn-link">Signup</button>
             <button type="button" class="btn btn-link">Reset Password</button>
@@ -42,7 +42,7 @@
       </div>
   </section>
 
-  
+  <script src="../trans-lab/js/main.js"></script>
 <!-- js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
